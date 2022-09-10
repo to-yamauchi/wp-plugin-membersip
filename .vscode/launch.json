@@ -1,0 +1,31 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Listen for Xdebug (Local)",
+			"type": "php",
+			"request": "launch",
+			"port": 9004,
+			"xdebugSettings": {
+				"max_children": 528,
+				"max_data": 5024,
+				"max_depth": 10,
+				"show_hidden": 1
+			}
+		},
+		{
+			"name": "Launch currently open script",
+			"type": "php",
+			"request": "launch",
+			"program": "${file}",
+			"cwd": "${fileDirname}",
+			"port": 9004,
+			"xdebugSettings": {
+				"max_children": 528,
+				"max_data": 5024,
+				"max_depth": 10,
+				"show_hidden": 1
+			}
+		}
+	]
+}

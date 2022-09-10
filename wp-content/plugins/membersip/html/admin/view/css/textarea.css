@@ -1,0 +1,46 @@
+.twrap {
+    position: relative;
+  }
+  .twrap textarea {
+    -webkit-appearance: none;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    box-sizing: border-box;
+    caret-color: #000;/*new*/
+    color: transparent;/*new*/
+    font-family: monospace;/*new*/
+    font-size: .8rem;
+    height: 100px;
+    margin: 0;
+    padding: 0 .25em;
+    resize: none;
+  }
+  .twrap pre {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+  }
+  .twrap pre code {
+    background: transparent;/*new*/
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-family: monospace;/*new*/
+    font-size: .8rem;
+    height: 100%;
+    margin: 0;
+    padding: 0 .15em;
+    white-space: pre-wrap;
+    word-break: break-all;
+    position: absolute;
+    top: 0px;
+  }
+  .twrap pre code.resizing {
+    height: unset;
+  }
+  .twrap pre code span {
+    font-weight: normal;
+  }

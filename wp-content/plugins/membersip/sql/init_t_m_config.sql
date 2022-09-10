@@ -1,0 +1,57 @@
+insert into t_m_config(p_code,m_code,s_code,`value`,valid_from,valid_to,remark,upd_time) values 
+('P001001001','validation','1',
+'<?xml version=''1.0'' standalone=''yes''?>
+<items>
+    <item>
+    	<target>sei</target>
+	    <validations>
+	        <validation>
+		        <empty>NO</empty>
+		        <message>「姓」は、必須入力になります。</message>
+	        </validation>
+	        <validation>
+		        <match>/^[ぁ-んァ-ン一-龥]/</match>
+	    		<message>「姓」が、全角漢字またはひらがなになっていません。</message>
+	        </validation>
+	    </validations>
+    </item>
+    <item>
+    	<target>mei</target>
+	    <validations>
+	        <validation>
+		        <empty>NO</empty>
+		        <message>「名」は、必須入力になります。</message>
+	        </validation>
+	        <validation>
+		        <match>/^[ぁ-んァ-ン一-龥]/</match>
+	    		<message>「名」が、全角漢字またはひらがなになっていません。</message>
+	        </validation>
+	    </validations>
+    </item>
+    <item>
+    	<target>mail</target>
+	    <validations>
+	        <validation>
+		        <empty>NO</empty>
+		        <message>「メールアドレス」は、必須入力になります。</message>
+	        </validation>
+	        <validation>
+		        <match>/^([a-zA-Z0-9])+([a-zA-Z0-9._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9._-]+)+$/</match>
+        		<message>「メールアドレス」の形式が異なります。</message>
+	        </validation>
+	    </validations>
+    </item>
+    <item>
+    	<target>tel</target>
+	    <validations>
+	        <validation>
+		        <empty>NO</empty>
+		        <message>「電話番号」は、必須入力になります。</message>
+	        </validation>
+	        <validation>
+		        <match>/^0[0-9]{9,10}$/</match>
+        		<message>「電話番号」の形式が異なります。</message>
+	        </validation>
+	    </validations>
+    </item>
+</items>',19000101,29991231,'入力チェック',current_timestamp);
